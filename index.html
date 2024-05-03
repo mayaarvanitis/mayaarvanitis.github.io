@@ -3,67 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maya Arvanitis - Portfolio</title>
+    <title>Maya Arvanitis</title>
     <style>
-        /* Style for the body to apply Helvetica Neue globally */
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-weight: bold;
-        }
-
-        /* Style for the header */
-        header {
-            text-align: center;
-            font-size: 36px;
-            font-weight: bold;
-            font-style: italic;
-            margin-bottom: 20px; 
-        }
-
-        /* Style for the navigation bar */
-        nav {
-            text-align: center;
-        }
-        
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+            font-family: 'Courier New', monospace;
             margin: 0;
-        }
-        
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        
-        nav ul li a {
-            text-decoration: underline;
-            color: black;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
         }
 
-        /* Style for the horizontal divider */
-        hr {
+        header, section, footer {
+            border-bottom: 1px solid #bbb;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a {
+            text-decoration: none;
+            color: #007bff; 
+        }
+        .welcome, .about, .portfolio, .contact {
+            padding: 20px;
+        }
+         h1, h2 {
+            border-bottom: 2px solid #eee; /* Heading underlines */
+            padding-bottom: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            border: 1px solid #ddd;
+            box-sizing: border-box; /* Ensures padding does not affect width */
+        }
+        button {
+            background: #007bff;
+            color: white;
             border: none;
-            height: 2px;
-            background-color: black;
-            margin: 10px auto;
-            width: 80%;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 0; /* Sharp edges for buttons */
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8em;
+            color: #666;
         }
     </style>
+
+      
 </head>
 <body>
     <header>
-        🌟 Maya Arvanitis 🌟
+        <div><strong>🌟 Maya Arvanitis 🌟</strong></div>
+        <nav>
+            <a href="index.html">Home 🏠</a></li>
+            <a href="about.html">About 📖</a></li>
+            <a href="projects.html">Projects 💬</a></li>
+            <a href="contact.html">Contact 💌</a></li>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home 🏠</a></li>
-            <li><a href="experience.html">Experience 💼</a></li>
-            <li><a href="about.html">About 📖</a></li>
-            <li><a href="projects.html">Projects 💬</a></li>
-            <li><a href="contact.html">Contact 💌</a></li>
-        </ul>
-    </nav>
+
+    <section class="welcome" id="home">
+        <h1>Hi! 👋</h1>
+        <p>I'm Maya, a U3 student in Computer Science and Biology at McGill University</p>
+    </section>
+    
+    
+    <section class="about" id="about">
+        <h2>About Me 🧬</h2>
+        <p>I am passionate about using computational methods to solve biological problems!</p>
+    </section>
+    
+    
+    <section class="portfolio" id="portfolio">
+        <h2>My Projects</h2>
+        <!-- Add project details here -->
+    </section>
+    
+        <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:maya.arvanitis@mail.mcgill.ca">maya.arvanitis@mail.mcgill.ca</a></p>
+        <div class="social-links">
+            <a href="https://github.com/mayaarvanitis" target="_blank">
+                <img src="file:///Users/mayaarvanitis/Downloads/github-mark/github-mark.png" alt="GitHub" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>© 2024 Maya Arvanitis. All rights reserved.</p>
+
     <hr>
 </body>
 </html>
+
